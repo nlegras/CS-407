@@ -17,5 +17,8 @@ def encode(input_string):
 				count = 1
 			tmp = i
 		output_string = output_string + tmp + str(count)
-
-		return output_string
+		
+		if len(output_string) < len(input_string):
+			return output_string
+		else:
+			return input_string
