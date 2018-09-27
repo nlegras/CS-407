@@ -11,12 +11,13 @@ def encode(input_string):
 
 		for i in input_string:
 			if i == tmp:
-				count = count + 1
+				count += 1
 			else:
-				output_string = output_string + tmp + str(count)
+				output_string += tmp + str(count)
 				count = 1
 			tmp = i
-		output_string = output_string + tmp + str(count)
+
+		output_string += tmp + str(count)
 		
 		if len(output_string) < len(input_string):
 			return output_string
