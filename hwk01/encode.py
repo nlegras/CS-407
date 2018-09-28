@@ -1,3 +1,4 @@
+
 def encode(input_string):
 
 	# initialize compressed string
